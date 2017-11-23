@@ -9,7 +9,7 @@ const app = express();
 const port = process.env.PORT || 8083;
 
 
-app.use(express.static('Novemeber-Hackaton/web'));
+app.use(express.static('Novemeber-Hackaton/ojeweb'));
 
 
 // listen for a localhost port and logging it on the console
