@@ -1,0 +1,385 @@
+<div class="search-component">
+  <style media="screen">
+    #img {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.75), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 25px;
+
+    }
+  </style>
+
+  <div class="container">
+
+    <nav aria-label="breadcrumb" role="navigation">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active" aria-current="page">Home</li>
+        <li class="breadcrumb-item active" aria-current="page">About</li>
+        <li class="breadcrumb-item active" aria-current="page">Contact</li>
+      </ol>
+    </nav>
+
+    <div class="input-group" style="width: 40rem;">
+      <!-- <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2"> -->
+      <input class="prompt form-control" type="text" placeholder="Search location..." data-bind="value: searchSuburb" aria-label="Search location..." aria-describedby="basic-addon2">
+      <span class="input-group-addon" data-bind="click: searchBtn" id="basic-addon2"><i class="search icon"></i></span>
+    </div>
+
+    <!-- <div class="ui search"> -->
+    <!-- <div class="ui icon input"> -->
+
+    <!-- </div> -->
+    <!-- <button data-bind="click: searchBtn">Search</button> -->
+    <!-- <div data-bind="foreach: allEvents">
+      <p data-bind="text: name"></p>
+    </div> -->
+    <!-- </div> -->
+    <br>
+    <br>
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="ui link card">
+          <div class="image">
+            <img src="css/images/art.svg">
+          </div>
+          <div class="content">
+            <a class="header text-center" data-bind="click: artCat">Art</a>
+          </div>
+          <!-- <div data-bind="foreach: allArtCat">
+            <p data-bind="text: category"></p>
+          </div> -->
+          <div class="extra content">
+            <div class="row">
+              <div class="text-center">
+                <div class="col-md-4">
+                  <img class="ui centered tiny image" id="img" src="css/images/paint-palette.svg" data-toggle="tooltip" data-placement="bottom" title="Painting">
+
+                </div>
+                <div class="col-md-4">
+                  <img class="ui centered tiny image" id="img" src="css/images/vector.svg" data-toggle="tooltip" data-placement="bottom" title="Acting">
+
+                </div>
+                <div class="col-md-4">
+
+                  <img class="ui centered tiny image" id="img" src="css/images/theater.svg" data-toggle="tooltip" data-placement="bottom" title="Theater">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title" id="exampleModalLongTitle">The Art of Happiness</h3>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="description">
+                  <div class="row">
+                    <div class="col-md-2">
+                      <img class="ui centered mini image" src="css/images/calendar.svg">
+                    </div>
+                    <div class="col-md-10">
+
+                      <!-- <span class="category" data-bind="text: date"></span> -->
+                      <span class="right floated time">28 Dec 2017 10:30am</span>
+
+                    </div>
+                  </div>
+                  <br>
+                  <hr>
+                  <div class="row">
+                    <div class="col-md-2">
+                      <img class="ui centered mini image" src="css/images/information.svg">
+                    </div>
+                    <div class="col-md-10">
+                      <p>
+Two brothers. Two continents. Two lives. One single soul. In a Naples at its utmost decay, Sergio, a taxi driver, receives shocking news. Nothing will be the same as before</p>
+
+                    </div>
+                  </div>
+                  <br>
+                  <hr>
+
+                  <div class="row">
+                    <div class="col-md-2">
+                      <img class="ui centered mini image" src="css/images/placeholder.svg">
+                    </div>
+                    <div class="col-md-10">
+
+                      <p>Labia Theatre 68 Orange Street <br> Cape Town, WC <br <br> 8001</p>
+                    </div>
+                  </div>
+
+                  <br>
+                  <hr>
+                  <div class="row">
+                    <div class="col-md-2">
+                      <img class="ui centered mini image" src="css/images/sun.svg">
+                    </div>
+                    <div class="col-md-10">
+                      <p>Sunny</p>
+
+                    </div>
+                  </div>
+                  <br>
+                  <hr>
+                  <div class="row">
+                    <div class="col-md-2">
+                      <p><img class="ui centered mini image" src="css/images/share.svg">
+
+                    </div>
+                    <div class="col-md-10">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.facebook.com/events/394312201001543/" target="_blank" rel="noopener"><img class="ui centered mini image" src="css/images/facebook.svg"></a>
+                        </div>
+                        <div class="col-md-3">
+                          <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=@artofhappiness8 " target="_blank" rel="noopener"><img class="ui centered mini image" src="css/images/twitter.svg"></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <br>
+                  <hr>
+                  <div class="row">
+                    <div class="text-center">
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.429983045286!2d18.41014184976505!3d-33.930067380544266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc6771b25429f5%3A0xae32c2ba9f5810eb!2sLabia+Theatre!5e0!3m2!1sen!2sza!4v1511418167370" width="550" height="450" frameborder="0" style="border-radius:8px" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div data-bind="foreach: allArtCat">
+        <div class="col-md-4">
+          <div class="ui link card">
+            <div class="content">
+              <a class="text-center">
+                <h4 data-bind="text: category, click: $parent.nameClick" style="width: 250px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color:grey" data-toggle="modal" data-target="#exampleModalLong"></h4>
+              </a>
+              <!-- <a class="header text-center">Art</a> -->
+            </div>
+            <div class="image">
+              <img src="css/images/art.svg">
+            </div>
+            <div class="extra content">
+              <div class="description">
+                <div class="row">
+                  <p class="col-md-8 float-left">Sunny</p>
+                  <span class="col-md-4 float-right">
+            <img class="ui centered tiny image" src="css/images/sun.svg" data-content="The default theme's basic popup removes the pointing arrow." data-variation="basic">
+          </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+        </div>
+      </div>
+      <br>
+
+      <div class="col-md-4">
+        <div class="ui link card">
+          <div class="image">
+            <img src="css/images/music.svg">
+          </div>
+          <div class="content">
+            <a class="header text-center" data-bind="click: musicCat">Music</a>
+          </div>
+          <div class="extra content">
+            <div class="row">
+              <div class="text-center">
+                <div class="col-md-4">
+                  <img class="ui centered tiny image" id="img" src="css/images/dj.svg">
+
+                </div>
+                <div class="col-md-4">
+                  <img class="ui centered tiny image" id="img" src="css/images/stage.svg">
+
+                </div>
+                <div class="col-md-4">
+                  <img class="ui centered tiny image" id="img" src="css/images/trumpet.svg">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="ui link card">
+          <div class="image">
+            <img src="css/images/trophy.svg">
+          </div>
+          <div class="content">
+            <a class="header text-center">Sport</a>
+
+          </div>
+          <div class="extra content">
+            <div class="row">
+              <div class="text-center">
+                <div class="col-md-4">
+                  <img class="ui centered tiny image" id="img" src="css/images/boxing.svg">
+
+                </div>
+                <div class="col-md-4">
+                  <img class="ui centered tiny image" id="img" src="css/images/rugby.svg">
+
+                </div>
+                <div class="col-md-4">
+                  <img class="ui centered tiny image" id="img" src="css/images/soccer.svg">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div data-bind="foreach: allMusicCat">
+        <div class="col-md-4">
+          <div class="ui link card">
+            <div class="image">
+              <img src="css/images/trophy.svg">
+            </div>
+            <div class="content">
+              <a class="text-center">
+                <p data-bind="text: category, " style="width: 250px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"></p>
+              </a>
+
+            </div>
+            <div class="extra content">
+              <div class="row">
+                <div class="text-center">
+                  <div class="col-md-4">
+                    <img class="ui centered tiny image" id="img" src="css/images/boxing.svg">
+
+                  </div>
+                  <div class="col-md-4">
+                    <img class="ui centered tiny image" id="img" src="css/images/rugby.svg">
+
+                  </div>
+                  <div class="col-md-4">
+                    <img class="ui centered tiny image" id="img" src="css/images/soccer.svg">
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <br>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="ui link card">
+          <div class="image">
+            <img src="css/images/confetti.svg">
+          </div>
+          <div class="content">
+            <a class="header text-center">Parties</a>
+
+          </div>
+          <div class="extra content">
+            <div class="row">
+              <div class="text-center">
+                <div class="col-md-4">
+                  <img class="ui centered tiny image" id="img" src="css/images/wine-bottle.svg">
+
+                </div>
+                <div class="col-md-4">
+                  <img class="ui centered tiny image" id="img" src="css/images/fireworks.svg">
+
+                </div>
+                <div class="col-md-4">
+                  <img class="ui centered tiny image" id="img" src="css/images/confetti2.svg">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="ui link card">
+          <div class="image">
+            <img src="css/images/sandwich.svg">
+          </div>
+          <div class="content">
+            <a class="header text-center">Food & Drink</a>
+
+          </div>
+          <div class="extra content">
+            <div class="row">
+              <div class="text-center">
+                <div class="col-md-4">
+                  <img class="ui centered tiny image" id="img" src="css/images/groceries.svg">
+
+                </div>
+                <div class="col-md-4">
+                  <img class="ui centered tiny image" id="img" src="css/images/cheese.svg">
+
+                </div>
+                <div class="col-md-4">
+                  <img class="ui centered tiny image" id="img" src="css/images/strawberry.svg">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="ui link card">
+          <div class="image">
+            <img src="css/images/collaboration.svg">
+          </div>
+          <div class="content">
+            <a class="header text-center">Networking</a>
+
+          </div>
+          <div class="extra content">
+            <div class="row">
+              <div class="text-center">
+                <div class="col-md-4">
+                  <img class="ui centered tiny image" id="img" src="css/images/teamwork.svg">
+
+                </div>
+                <div class="col-md-4">
+                  <img class="ui centered tiny image" id="img" src="css/images/brainstorm.svg">
+
+                </div>
+                <div class="col-md-4">
+                  <img class="ui centered tiny image" id="img" src="css/images/businessman.svg">
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
